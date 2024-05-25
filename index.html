@@ -59,12 +59,13 @@
         <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
         <h2>Contact Us</h2>
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
+          <!-- HTML semantic structure: Adding the id and name attributes to the elements of the form -->
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Full Name">
+          <input type="text" id="email" name="email" placeholder="Email">
+          <input type="text" id="subject" name="subject" placeholder="Subject">
           <b>Your Message</b>
-          <textarea></textarea>
+          <textarea id="message" name="message"></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
