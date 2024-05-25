@@ -35,8 +35,8 @@
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      
-      <div class="owner">
+      <!-- HTML semantic structure: Replacing the div tag with the section tag -->
+      <section class="owner">
         <!-- HTML semantic structure: Replacing h1 tag with the h3 to indicate sub-headings -->
         <h3>Meet the owner</h3>
         <ul>
@@ -53,8 +53,8 @@
           Musicville, Danceistan
           B3T 0L0
         </p>
-      </div>
-      <!-- HTML semantic structure: Adding alt attribute for description of image -->
+      </section>
+      <!-- HTML semantic structure: Replacing the div tag with the section tag -->
       <section class="contact-section">
         <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
         <h2>Contact Us</h2>
@@ -62,9 +62,11 @@
           <!-- HTML semantic structure: Adding the id and name attributes to the elements of the form -->
           <label for="fname">Full Name</label>
           <input type="text" id="fname" name="fname" placeholder="Full Name">
-          <input type="text" id="email" name="email" placeholder="Email">
+          <!-- HTML semantic structure:changing the type of the input email -->
+          <input type="email" id="email" name="email" placeholder="Email">
           <input type="text" id="subject" name="subject" placeholder="Subject">
-          <b>Your Message</b>
+          <!-- HTML semantic structure: Replacing the b tag with the label tag for the textarea input -->
+          <label for="message">Your Message</label>
           <textarea id="message" name="message"></textarea>
           <button type="submit">Send</button>
         </form>
