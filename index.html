@@ -20,10 +20,12 @@
   </ul>
   <div class="container">
     <!-- HTML semantic structure: Replacing the div tag with the header tag -->
-    <header class="site-header">
+    <!--Aria role added: banner -->
+    <header role="banner" class="site-header">
       <h1>Jam Box Studios</h1>
       <!--HTML semantic structure: Replacing the div tag with the nav tag -->
-      <nav id="nav" class="main-nav">
+      <!--Aria role added: navigation -->
+      <nav role="navigation" id="nav" class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -35,13 +37,15 @@
       <img src="https://placekitten.com/1200/900" class="banner" alt="banner image of a cute kitten">
     </header>
     <!-- HTML semantic structure: Replacing the div tag with the main tag -->
-    <main id="main" class="main-content">
+    <!--Aria role added: main -->
+    <main role="main" id="main" class="main-content">
       <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
       <!-- HTML semantic structure: Replacing the div tag with the section tag -->
-      <section class="owner">
+      <!--Aria role added: complementary -->
+      <section role="complementary" class="owner">
         <!-- HTML semantic structure: Replacing h1 tag with the h3 to indicate sub-headings -->
         <h3>Meet the owner</h3>
         <ul>
@@ -63,7 +67,8 @@
       <section class="contact-section">
         <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
         <h2>Contact Us</h2>
-        <form action="thanks.html">
+        <!--Aria role added: form -->
+        <form role="form" action="thanks.html">
           <!-- HTML semantic structure: Adding the id and name attributes to the elements of the form -->
           <label for="fname">Full Name</label>
           <input type="text" id="fname" name="fname" placeholder="Full Name">
@@ -72,13 +77,15 @@
           <input type="text" id="subject" name="subject" placeholder="Subject">
           <!-- HTML semantic structure: Replacing the b tag with the label tag for the textarea input -->
           <label for="message">Your Message</label>
-          <textarea id="message" name="message"></textarea>
-          <button type="submit">Send</button>
+          <textarea id="message" name="message" aria-label="Write your message here"></textarea>
+          <!--Aria role added: button-->
+          <button role="button" type="submit" aria-label="Submit information">Send</button>
         </form>
       </section>
     </main>
     <!-- HTML semantic structure: Replacing the div tag with the footer tag -->
-    <footer class="site-footer">
+    <!--Aria role added: content info -->
+    <footer role="contentinfo" class="site-footer">
       &copy; 2021 Jam Box Studios
     </footer>
   </div>
