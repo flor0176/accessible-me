@@ -1,6 +1,9 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: grey;
+  /* Change background color #808080 as per Contrast Ratio value was 5.31:1 WCAG AA: Pass WCAG AAA: Fail */
+  /* New Contrast Ratio value: 12.27:1 WCAG AA: Pass WCAG AAA: Pass*/
+  background-color: #f5f5f5; 
+  color: #003349;
   margin: 0;
   padding: 0;
 }
