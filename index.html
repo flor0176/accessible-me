@@ -48,36 +48,40 @@
       <section role="complementary" class="owner">
         <!-- HTML semantic structure: Replacing h1 tag with the h3 to indicate sub-headings -->
         <h3>Meet the owner</h3>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <!-- Adding schema microdata for owner information -->
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
         <h2>Address</h2>
-        <p>
-          Jambox Studios
-          123 Guitar Road,
-          Musicville, Danceistan
-          B3T 0L0
+        <!-- Adding schema microdata for business address -->
+        <p itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="name">Jambox Studios</span>
+          <span itemprop="streetAddress">123 Guitar Road,</span>
+          <span itemprop="addressLocality">Musicville, Danceistan</span>
+          <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </section>
       <!-- HTML semantic structure: Replacing the div tag with the section tag -->
-      <section class="contact-section">
+      <!-- Adding schema microdata contact section -->
+      <section class="contact-section" itemscope itemtype="https://schema.org/ContactPage">
         <!-- HTML semantic structure: Replacing h1 tag with the h2 to represent sub-headings -->
         <h2>Contact Us</h2>
         <!--Aria role added: form -->
-        <form role="form" action="thanks.html">
+        <!-- Adding schema microdata for Contact US form-->
+        <form role="form" action="thanks.html" itemscope itemtype="https://schema.org/ContactPoint">
           <!-- HTML semantic structure: Adding the id and name attributes to the elements of the form -->
           <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Full Name">
+          <input type="text" id="fname" name="fname" placeholder="Full Name" itemprop="name">
           <!-- HTML semantic structure:changing the type of the input email -->
-          <input type="email" id="email" name="email" placeholder="Email">
-          <input type="text" id="subject" name="subject" placeholder="Subject">
+          <input type="email" id="email" name="email" placeholder="Email" itemprop="email">
+          <input type="text" id="subject" name="subject" placeholder="Subject" >
           <!-- HTML semantic structure: Replacing the b tag with the label tag for the textarea input -->
           <label for="message">Your Message</label>
-          <textarea id="message" name="message" aria-label="Write your message here"></textarea>
+          <textarea id="message" name="message" aria-label="Add your message here" itemprop="description"></textarea>
           <!--Aria role added: button-->
           <button role="button" type="submit" aria-label="Submit information">Send</button>
         </form>
